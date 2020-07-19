@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin:0;
+        }
+        table {
+            width:100%;
+            min-height:100%;
+        }
+        #left ul {
+            list-style-type: none;
+            padding:0;
+        }
+        #left ul>li:not(last-child) {
+            border-bottom:1px solid black;        
+        }
+        #left ul>li:last-child {
+            border-bottom:0;
+        }
+
+        #left ul>li a {
+            text-decoration: none;
+            display: inline-block;
+            padding:8px;
+            width:100%;       
+            box-sizing: border-box;                 
+        }
+        #left ul>li a:hover {
+            background-color: paleturquoise;
+        }
+        #header {
+            height:64px;
+            padding: 16px;
+            text-align:center;
+            background-color: aqua;            
+        }
+        
+        #header h1 {
+            margin: 0;
+        }
+        #header .icon {
+            height:48px;
+            vertical-align: middle;
+        }
+        #main {
+            background-color:aqua;
+        }
+        #left {
+            float:left;
+            width: 200px;
+            background-color: aqua;
+            vertical-align: top;
+            top:0px;
+
+        }
+        #right {
+            background-color: bisque;
+            margin-left:200px;
+            padding:8px;
+            box-sizing: border-box;
+        }
+        #footer {
+            text-align:center;
+            padding:8px;
+            background-color: darkgoldenrod;
+        }      
+        .center {
+            text-align:center;
+        }  
+        .price::before {
+            content: '￥';
+        }
+        p {
+            text-indent: 2em;
+        }
+        p::first-letter {
+            font-size:32px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1 style="font-size:48px;"><img src="" class="icon"/>红茶black tea</h1>
+        </div>
+        <div id="main">
+            <div id="left">
+                <ul>
+                    <li>
+                        <a href="#latte">祁门工夫</a>
+                    </li>
+                    <li>
+                        <a href="#cappuccino">正山小种</a>
+                    </li>
+                    <li>
+                        <a href="#americano">金骏眉</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#soda">银骏眉</a>
+                    </li>
+                </ul>
+            </div><div id="right">
+                
+                <div class="center">
+                    <img src="" alt="" style="display:block;float:left;clear:right;">
+                   
+                </div>
+                <div class="center">
+                
+                    
+                </table>
+                </div>
+                
+                    
+                   
+                    
+                <div class="center">
+                    <img src="t/下载.jpg" width="300" height="128" ></img>
+                   
+                
+                
+                
+                <h2 id="latte">祁门工夫</h2>
+                <p>
+            
+                    祁门红茶外形条索紧细苗秀，金毫不多，色泽乌润；冲泡后香气清香持久，似果香又似兰花香，国际茶市上把这种香气专门叫做“祁门香”，可见香气非常独特。汤色红艳明亮，口感鲜醇酣厚，叶底嫩软红亮。其它的功夫红茶：福建的工夫红茶统称闽红工夫。
+                </p>
+                <h2 id="cappuccino">正山小种</h2>
+                <p>
+                    正山小种红茶是世界上最早出现的红茶，属于小种红茶。最初的原产是在武夷山市星村镇桐木村，故又称“桐木关小种”，小种指其稀少而珍贵。后因市面上流传了许多假冒的小种红茶，所以当地人为了区别假冒品，取名为“正山”，意指正宗。正山小种本身 应该是带有烟气，用松针或松柴熏制，称为烟正山小种，现代也有不带烟气的，不用松针或松柴熏制，称为无烟正山小种。 正山小种的产茶区是武夷山桐木村及桐木村周边海拔600-1200米茶园，大多使用传统采茶群体品种制作。之后要使用当地所产松木熏焙，形成正山小种特有的一股浓醇的松茗香和桂圆干香，两三泡后具桂圆汤味。正山小种条索肥壮，紧结匀整，不带芽毫；色泽乌黑带褐，较油润；汤色红艳明亮；香气芳香浓烈，带有松烟香；滋味醇厚回甘，有桂圆汤味，叶底肥厚红亮。
+                </p>
+                <h2 id="americano">金骏眉</h2>
+                <p>
+                    金骏眉是正山小种茶的顶级品种。此茶冲泡后其汤色金黄，具淡而甜的花香、蜜香、果香，品之甘甜润滑，叶底外形细小而紧秀，故而取名中含有“金”。因新开发的产品只选用产自崇山峻岭中小种茶树的一芽为原料，又期望新作能够如骏马般奔腾发展，故而取名中含有“骏”。茶叶的形状似眉毛，“眉”还具有寿者、长久之意，故而取名中含有“眉”。                  
+                </p>
+                <h2 id="soda">银骏眉</h2>
+                <p>
+                    银骏眉是与金骏眉一同被研制出来的，也是正山小种的高端品种。银骏眉是于谷雨前采摘于武夷山国家级自然保护区内海拔1500-1800米高山的原生态小种野茶的茶芽，制作500克银骏眉需数万颗标准嫩芽，一芽一叶。银骏眉在外形上条索紧细，锋苗显秀，色泽油润，稍显黄毫之色。银骏眉精心选取一芽一叶，以正山小种传统手工工艺进行制作，不过筛，所以条形保持完好，外形上已经类似于工夫红茶的条索了。银骏眉盖碗边的汤色显得绿黄清澈，汤色金黄清澈；银骏眉香气独特，清高持久，是一种花香与果香混合的综合香型，滋味鲜爽甘活，喉韵悠长。 
+                </p>
+            </div>
+        </div>
+        <div id="footer"><span>版权所有</span> &copy; <a href="https://www.baidu.com">小苏</a></div>
+    </div>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        window.onscroll = function () {
+            var scroll = document.documentElement.scrollTop;
+            var offset = $('#header').height();
+            console.log(scroll, offset);
+            if (scroll > offset)  {
+                $('#left').css('position', 'fixed');
+            } else {
+                $('#left').css('position', 'static');
+            }
+        }
+    </script>
+</body>
+</html>
