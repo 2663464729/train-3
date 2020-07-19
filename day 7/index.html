@@ -1,102 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>苏志雄的酒吧</title>
-    <link rel="stylesheet" href="./train 3.css" />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-    <script src="./show.js"></script>
-  </head>
-  <body>
-    <div style="width: 100%;">
-      <div class="header">
-        <div class="header-box">
-          <div class="header-box-left">
-            <img src="./sea/lg.png" style="vertical-align: middle;" width="50px" alt="" />
-            
-             <a href="https://baike.baidu.com/item/%E9%85%92%E5%90%A7%E6%96%87%E5%8C%96/749609" target="_blank">苏志雄的酒吧</a>
-          </div>
-          <div class="header-box-right">
-            <a href="#weishji">喜欢的酒</a>
-            
-          </div>
-    
-          <div class="dropdown">
-            <button class="icon-mobile">
-                下拉
-            </button>
-            <div class="dropdown-content">      
-              </div>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品添加和删除</title>
+    <style>
+    #message {
+        color:red;
+    }
+    #goods th,td{
+        padding:8px;
+    }
+    #pagination {
+        list-style-type: none;
+        margin:0;
+        padding:0;
+    }
+    #pagination li {
+        display:inline-block;
+        border:1px solid black;
+        padding: 8px;
+        margin: 8px;
+    }
+    #pagination li:hover {
+        cursor:pointer;
+    }
+    #pagination li.active {
+        background-color:azure;
+    }
+    #mask {
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-color: black;
+        opacity: 0.2;
+        z-index: 1000;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <h2>商品列表</h2>
+    <div >
+        <img id="loading" src="images/Loading.png"  style="width:32px;height:32px;">
+        <div style="position:relative;">
+            <table id="goods" border="1" style="border-collapse: collapse;">
+                <tr>
+                    <th>品名</th>
+                    <th>价格</th>
+                    <th>日期</th>
+                </tr>
+            </table>
+
         </div>
-      </div>
-      <div class="content">
-        <div style="position: relative;">
-          <p id="xia" class="content-title">酒吧的酒</p>
-          <div class="content-xia">
-            <div class="content-xia-det">
-              <img src="./tupian/weishiji.png" alt="" />
-              <span>威士忌</span>
-            </div>
-            <div class="content-xia-det">
-              <img src="./tupian/jiweijiu.jpg" alt="" />
-              <span>鸡尾酒</span>
-            </div>
-            <div class="content-xia-det">
-              <img src="./tupian/langmujiu.jpg" alt="" />
-              <span>朗姆酒</span>
-            </div>
-            <div class="content-xia-det">
-              <img src="./tupian/bailandi" alt="" />
-              <span>白兰地</span>
-            </div>
-          </div>
+
+        <div>
+            <ul id="pagination">
+                <li class="active">1</li>
+                <li>2</li>
+            </ul>
         </div>
-        <div style="position: relative;">
-          <div class="content-xie">
-            <div class="content-xie-det">
-              <img src="./tupian/下载.jfif" alt="" />
-              <span>金酒</span>
-            </div>
-            <div class="content-xie-det">
-              <img src="./tupian/xiangbin" alt="" />
-              <span>香槟</span>
-            </div>
-            <div class="content-xie-det">
-              <img src="./tupian/futejia.jpg" alt="" />
-              <span>伏特加</span>
-            </div>
-            <div class="content-xie-det">
-              <img src="./tupian/suda.jpg" alt="" />
-              <span>苏打水</span>
-            </div>
-          </div>
-        </div>
-      </div>
-        </div>
-      <div class="button">
-        <div class="button-text">
-          <div class="button-text-left">
-            <div class="button-text-left-text">
-              <span>  在这放松吧  </span>
-            </div>
-          </div>
-          <div class="button-text-right">
-            <img src=".tupian/.jiuba.jpg" alt="" width="240px" />
-           
-          </div>
-          <div class="row">
-            <div class="self-desc">
-                <div class="self-wrap" id="page3">
-                </div>
-            </div>
-        </div>
-        <div style="padding-top: 60px; padding-bottom: 20px;">
-          
-          <span style="color: white;">版权所有&nbsp;©&nbsp;苏志雄</span>
-        </div>
-      </div>
     </div>
-  </body>
+
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="js/index.js">
+    </script>
+</body>
 </html>
